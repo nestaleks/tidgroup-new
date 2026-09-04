@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" type="image/svg+xml">
+    <title>Contacts - TID group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Premium Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Legacy fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./app.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu--close"></div>
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="./index.html">
+            <img src="./images/logo.png" alt="logo">
+          </a>
+          
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="btn-line"></span>
+              <span class="btn-line"></span>
+              <span class="btn-line"></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__close">
+                <button class="menu__close-btn">
+                  <img src="./images/close.svg" alt="close_menu">
+                </button>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html" data-key="menu-home">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html#projects" data-key="menu-projects">Projects</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./investments.html" data-key="menu-investments">Investments</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./services.html" data-key="menu-services">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./contacts.html" data-key="menu-contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="language-selector" type="button" data-lang-toggle aria-label="Switch language" title="Switch language">
+            <span class="current-lang">EN</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <button onclick="topFunction()" id="upBtn" title="Up">
+        <img src="./images/upbtn.svg" alt=""></button>
+      <section class="contacts__name section__padding">
+        <div class="container">
+          <section class="contacts__top section__padding">
+            <div class="container">
+              <h2 class="page__title" data-key="contacts-page-title">Contact Us</h2>
+              <div class="contacts__items">
+                <div class="contacts__item">
+                  <div class="contacts__item-img">
+                    <img src="./images/icons/contacts-address.svg" alt="">
+                  </div>
+                  <p class="contacts__item-title" data-key="contacts-address-title">
+                    ADDRESS
+                  </p>
+                  <p class="contacts__item-text" data-key="contacts-item-text-1">Top Invest Development Group SL</p>
+                  <p class="contacts__item-text" data-key="contacts-item-text-2">Palma De Mallorca</p>
+                  <p class="contacts__item-text" data-key="contacts-item-text-3">Spain</p>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__item-img">
+                    <img src="./images/icons/contacts-feedback.svg" alt="">
+                  </div>
+                  <p class="contacts__item-title" data-key="contacts-mail-title">
+                    EMAIL
+                  </p>
+                  <a class="contacts__item-email" href="mailto:office@tidgroup.es">office@tidgroup.es</a>
+                  <a class="contacts__item-email" href="mailto:pmallorca@tidgroup.es">pmallorca@tidgroup.es</a>
+                  <a class="contacts__item-email" href="mailto:info.mallorca@tidgroup.es">info.mallorca@tidgroup.es</a>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__item-img">
+                    <img src="./images/icons/contacts-telephone.svg" alt="">
+                  </div>
+                  <p class="contacts__item-title" data-key="contacts-phone-title">
+                    Phone
+                  </p>
+                  <a class="contacts__item-phonenumber" href="tel:+34658058102">+34658058102</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__company">
+            <li class="footer__company-title" data-key="footer-title">
+              Company
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./index.html"  data-key="footer-home">Home</a>
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./index.html#projects"  data-key="footer-projects">Projects</a>
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./investments.html"  data-key="footer-investments">Investments</a>
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./services.html"  data-key="footer-services">Services</a>
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./contacts.html"  data-key="footer-contacts">Contacts</a>
+            </li>
+          </ul>
+          <blockquote class="footer__blockquote">
+            <p class="footer__blockquote-text"  data-key="footer-blockquote-text">“Building your future brick by brick: our mission is to turn your dreams into cozy and reliable homes, where every detail is filled with care and quality.”
+            </p>
+          </blockquote>
+          <div class="footer__contacts">
+            <h5 class="footer__contacts-title" data-key="footer-contacts-title">Stay In Touch</h5>
+            <p class="footer__contacts-text" data-key="footer-contacts-text">Please feel free to contact us via the email of phone. We would be happy to hear from you!</p>
+            <ul class="footer__nav">
+              <li class="footer__nav-logo">
+                <a class="footer__logo" href="./index.html">
+                  <img src="./images/logo.png" alt="logo">
+                </a>
+              </li>
+              <li class="footer__nav-contacts">
+                <a class="footer__nav-phone" href="tel:+34658058102">+34658058102</a>
+                <a class="footer__nav-email" href="mailto:office@tidgroup.es">office@tidgroup.es</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/translate.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

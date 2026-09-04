@@ -1,0 +1,11 @@
+# IDE
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Build output / dependencies (if a static site generator is added later)
+_site/
+node_modules/

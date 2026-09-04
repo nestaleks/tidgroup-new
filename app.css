@@ -1,0 +1,30 @@
+/* Import styles */
+@import url(./css/reset.css);
+@import url(./css/magnific-popup.css);
+@import url(./css/modal.css);
+
+
+/* Base styles */
+@import url(./css/base.css);
+
+/* Header styles */
+@import url(./css/header.css);
+/* Footer styles */
+@import url(./css/footer.css);
+
+/* Home page */
+@import url(./css/home.css);
+/* Project page styles */
+@import url(./css/project.css);
+/* Investments styles */
+@import url(./css/investments.css);
+/* Services page styles */
+@import url(./css/services.css);
+/* Contacts page styles */
+@import url(./css/contacts.css);
+/* About page styles */
+@import url(./css/about.css);
+/* Gallery styles */
+@import url(./css/gallery.css);
+/* News styles */
+@import url(./css/news.css);

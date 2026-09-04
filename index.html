@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico" type="image/svg+xml">
+  <title>TID group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Premium Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <!-- Legacy fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="./app.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="menu--close"></div>
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo" href="./index.html">
+              <img src="./images/logo.png" alt="logo">
+            </a>
+            
+            <nav class="menu">
+              <button class="menu__btn">
+                <span class="btn-line"></span>
+                <span class="btn-line"></span>
+                <span class="btn-line"></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__close">
+                  <button class="menu__close-btn">
+                    <img src="./images/close.svg" alt="close_menu">
+                  </button>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./index.html" data-key="menu-home">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./index.html#projects" data-key="menu-projects">Projects</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./investments.html" data-key="menu-investments">Investments</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./services.html" data-key="menu-services">Services</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./contacts.html" data-key="menu-contacts">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="language-selector" type="button" data-lang-toggle aria-label="Switch language" title="Switch language">
+              <span class="current-lang">EN</span>
+            </button>
+          </div>
+        </div>
+    </header>
+    <main class="main">
+      <button onclick="topFunction()" id="upBtn" title="Up">
+      <img src="./images/upbtn.svg" alt=""></button>
+    <section class="top">
+      <div class="container">
+        <div class="top__inner">
+          <h1 class="top__title" data-key="top-title">We sell expertise, you gain comfort</h1>
+          <div class="scroll">
+            <img class="scroll-img" src="./images/scroll-down.gif">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mallorca__section section__padding">
+      <div class="container">
+        <p class="mallorca__title section__title" data-key="mallorca-title">Beautiful Mallorca</p>
+        <div class="mallorca__inner">
+          <div class="mallorca__content">
+            <p class="mallorca__section-text" data-key="mallorca-text-1">Palma, or Palma de Mallorca as it is sometimes called, is not only the capital and largest city of Mallorca but also the entire Balearic archipelago.</p>
+            <p class="mallorca__section-blockquote" data-key="mallorca-blockquote">"I live where I want to live. I live in Mallorca, and I'm not sure there's a better place in the world"
+            <br>
+            — Rafael Nadal.</p>
+            <p class="mallorca__section-text" data-key="mallorca-text-2">For most people, Mallorca likely conjures up images of sunny beaches and lively parties. However, it is also an island rich in history, stunning landscapes, and remarkable nature.</p>
+            <p class="mallorca__section-text" data-key="mallorca-text-3">It’s undoubtedly a fantastic beach destination, and there’s nothing wrong with coming here solely to relax by the sea. But if the spirit of adventure takes hold and you want to mix a bit of excitement with your leisure, Mallorca is full of thrilling secrets and delightful discoveries.</p>
+            <p class="mallorca__section-text" data-key="mallorca-text-4">In many ways, Palma embodies a different, authentic Mallorca, one that stretches deep into the past.</p>
+            <p class="mallorca__section-text" data-key="mallorca-text-5">Founded by the Romans centuries ago, Palma de Mallorca was long under Arab and Byzantine influence. To this day, the extraordinary blend of diverse cultures, religions, and lifestyles can be felt in the narrow streets of the old town.</p>
+          </div>
+          <div class="mallorca__img">
+            <img src="./images/mallorca__img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="goal section__padding">
+      <div class="container">
+        <div class="goal__inner">
+          <div class="goal__left">
+            <p class="goal__pretitle pretitle" data-key="goal-pretitle">Our goal</p>
+            <h2 class="goal__title" data-key="goal-title">We are dedicated to create a home that you'll love.</h2>
+          </div>
+          <div class="goal__right">
+            <p class="goal__text" data-key="goal-text-1">We specialize in the construction, sale, and renovation of residential properties, as well as providing excellent opportunities for real estate investment. Our professionals ensure high-quality projects, a personalized approach, and full support at every stage of the transaction. We offer a wide range of housing options – from cozy apartments to spacious houses, creating comfortable and modern living spaces.</p>
+            <p class="goal__text" data-key="goal-text-2">Join our satisfied clients and create your ideal home with us!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="direction section__padding">
+      <div class="container">
+        <p class="direction__pretitle pretitle" data-key="direction-pretitle">What we do</p>
+        <h3 class="direction__title section__title" data-key="direction-title">We make your dreams come true.</h3>
+        <div class="direction__item">
+          <img class="direction__item-img" src="images/direction-4.jpg" alt="Design Professionals images">
+          <div class="direction__item-content">
+            <h4 class="direction__item-title" data-key="earnings-item-title">
+              Earnings
+            </h4>
+            <h6 class="direction__item-subtitle" data-key="earnings-item-subtitle-1">>
+              Real Estate Purchase
+            </h6>
+            <p class="direction__item-text" data-key="earnings-item-text-1">
+              All over the world, real estate is a stable and reliable investment. We ensure full transparency throughout the transaction process and assist you every step of the way in acquiring your dream property.
+            </p>
+            <h6 class="direction__item-subtitle" data-key="earnings-item-subtitle-2">>
+              Real Estate Sales
+            </h6>
+            <p class="direction__item-text" data-key="earnings-item-text-2">
+              If you have property you wish to sell, turn to us for professional assistance. Our partners provide a comprehensive approach to selling your property, including market value assessment, development of marketing strategies, and organization of property viewings. 
+            </p>
+            <h6 class="direction__item-subtitle" data-key="earnings-item-subtitle-3">>
+              Real Estate Investment
+            </h6>
+            <p class="direction__item-text" data-key="earnings-item-text-3">
+              Real estate is an attractive investment opportunity, and we can help you maximize your investment potential. We offer consultations on selecting promising investment properties, market analysis, and development of strategies to achieve your financial goals.
+            </p>
+          </div>
+        </div>
+        <div class="direction__item">
+          <div class="direction__item-content">
+            <h4 class="direction__item-title" data-key="construction-item-title">
+              Construction
+            </h4>
+            <h6 class="direction__item-subtitle" data-key="construction-item-subtitle-1">
+              Comprehensive Construction Services
+            </h6>
+            <p class="direction__item-text" data-key="construction-item-text-1">
+              Our company offers a full spectrum of construction services, covering everything from laying the foundation to completing the roofing.
+            </p>
+            <h6 class="direction__item-subtitle" data-key="construction-item-subtitle-2">
+              Quality Assurance and Timely Delivery
+            </h6>
+            <p class="direction__item-text" data-key="construction-item-text-2">
+              Our experienced team meticulously oversees every phase of the construction process to maintain quality control and ensure adherence to project timelines. 
+            </p>
+            <h6 class="direction__item-subtitle" data-key="construction-item-subtitle-3">
+              Customization and Flexibility
+            </h6>
+            <p class="direction__item-text" data-key="construction-item-text-3">
+              We recognize that every homeowner has unique preferences and requirements for their dream home. That's why we prioritize customization and flexibility in our construction approach.
+            </p>
+          </div>
+          <img class="direction__item-img" src="images/direction-2.jpg" alt="Design Professionals images">
+        </div>
+        <div class="direction__item">
+          <img class="direction__item-img" src="images/direction-1.jpg" alt="Design Professionals images">
+          <div class="direction__item-content">
+            <h4 class="direction__item-title" data-key="desigm-item-title">
+              Design
+            </h4>
+            <h6 class="direction__item-subtitle" data-key="desigm-item-subtitle-1">
+              Individualized Approach to Design
+            </h6>
+            <p class="direction__item-text" data-key="desigm-item-text-1">
+              Our team of architects and designers works with each client individually to create a unique project tailored to their preferences, needs, and budget.
+            </p>
+            <h6 class="direction__item-subtitle" data-key="desigm-item-subtitle-2">
+              Innovative Technologies and Environmental Sustainability
+            </h6>
+            <p class="direction__item-text" data-key="desigm-item-text-2">
+              We constantly monitor the latest trends in construction and implement innovative technologies to create efficient and environmentally sustainable homes.
+            </p>
+            <h6 class="direction__item-subtitle" data-key="desigm-item-subtitle-3">
+              Transparency and Client Engagemen
+            </h6>
+            <p class="direction__item-text" data-key="direction-item-text-3">
+              We provide transparency in decision-making, regular updates on the progress of work, and readiness to listen to and accommodate any additional requests or changes. 
+            </p>
+          </div>
+        </div>
+        <div class="direction__item">
+          <div class="direction__item-content">
+            <h4 class="direction__item-title" data-key="repair-item-title">
+              Repair and Restoration
+            </h4>
+            <h6 class="direction__item-subtitle" data-key="repair-item-subtitle-1">
+              Professional Repair and Restoration
+            </h6>
+            <p class="direction__item-text" data-key="repair-item-text-1">
+              Our partner companies will ensure high-quality execution of all tasks, including replacement of damaged structures, interior and exterior updates.
+            </p>
+            <h6 class="direction__item-subtitle" data-key="repair-item-subtitle-2">
+              Unique Solutions and Personalization
+            </h6>
+            <p class="direction__item-text" data-key="repair-item-text-2">
+              Will offer you unique and individualized solutions for each repair and restoration project. We are ready to take on any challenges and implement the boldest ideas.
+            </p>
+            <h6 class="direction__item-subtitle" data-key="repair-item-subtitle-3">
+              Efficiency and Reliability
+            </h6>
+            <p class="direction__item-text" data-key="repair-item-text-3">
+              Our teams strives for impeccable quality and reliability in every detail of repair or restoration to make your home an ideal place to live again.
+            </p>
+          </div>
+          <img class="direction__item-img" src="images/direction-3.jpg" alt="Design Professionals images">
+        </div>
+        
+        <div class="direction__item">
+          <img class="direction__item-img" src="images/direction-5.jpg" alt="">
+          <div class="direction__item-content">
+            <h4 class="direction__item-title" data-key="invest-item-title">
+              Invest in Your Stability and Future!
+            </h4>
+            <p class="direction__item-text" data-key="invest-item-text-1">
+              We offer a unique opportunity to invest in real estate that:
+            </p>
+            <h6 class="direction__item-subtitle" data-key="invest-item-subtitle-1">
+              Ensures stable income
+            </h6>
+            <p class="direction__item-text" data-key="invest-item-text-2">
+              With high liquidity and rising property market prices, you gain a reliable passive income.
+            </p>
+            <h6 class="direction__item-subtitle" data-key="invest-item-subtitle-2">
+              Protects your capital
+            </h6>
+            <p class="direction__item-text" data-key="invest-item-text-3">
+              Real estate remains one of the safest tools for preserving and growing your wealth.
+            </p>
+            <h6 class="direction__item-subtitle" data-key="invest-item-subtitle-3">
+              Offers diverse options
+            </h6>
+            <p class="direction__item-text" data-key="invest-item-text-4">
+              We will help you select the best properties—whether residential, commercial, or investment projects with high ROI.
+            </p>
+          </div>
+        </div>
+        <div class="offer">
+            <div class="content">
+              <h2 class="section__title" data-key="offer-title">Special Offer for New Investors:</h2>
+              <p data-key="offer-subtitle">Personal consultation with market experts and a turnkey investment plan.</p>
+              
+              <!-- Кнопка для открытия аккордеона -->
+              <button class="accordion__btn" onclick="toggleAccordion()" data-key="offer-button">Read More</button>
+  
+              <!-- Скрытый аккордеон -->
+              <div class="accordion__content" id="accordion">
+                  <h3 class="accordion__content-title" data-key="accordion-title-1">Take the first step towards financial independence today!</h3>
+                  <p class="accordion__content-text" data-key="accordion-text-1">Submit your request, and we will find the perfect investment option tailored just for you.</p>
+                  <h3 class="accordion__content-title" data-key="accordion-title-2">Why choose us?</h3>
+                  <p class="accordion__content-text" data-key="accordion-text-2">Our team consists of professionals with years of experience in the real estate market.</p>
+                  <ul class="accordion__content-list">
+                    <p>We:</p>
+                    <li class="accordion__content-item">
+                      <img class="accordion__content-img" src="./images/icons/help.svg" alt="">
+                      <p data-key="accordion-text-3">Help clients discover the best investment opportunities.</p>
+                    </li>
+                    <li class="accordion__content-item">
+                      <img class="accordion__content-img" src="./images/icons/analysis.svg" alt="">
+                      <p data-key="accordion-text-4">Conduct in-depth market analysis to maximize the protection of your investments.</p>
+                    </li>
+                    <li class="accordion__content-item">
+                      <img class="accordion__content-img" src="./images/icons/support.svg" alt="">
+                      <p data-key="accordion-text-5">Support you at every stage — from selecting the property to closing the deal.</p>
+                    </li>
+                  </ul>
+                  <h3 class="accordion__content-title" data-key="accordion-title-3">We know how to turn your investment into a successful and profitable project!</h3>
+                  <a class="accordion__contacts-btn" href="mailto:office@tidgroup.es" data-key="accordion-contacts-btn">Contact Us</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects section__padding" id="projects">
+      <div class="container">
+        <p class="projects__pretitle pretitle" data-key="projects-pretitle">Our Projects</p>
+        <h3 class="projects__title section__title" data-key="projects-title">New Construction and Property Maintenance</h3>
+        <p class="projects__text" data-key="projects-text">Our completed projects showcase the full extent of our expertise, highlighting the quality of our work and the meticulous attention to detail that defines our approach to construction.</p>
+        <div class="projects__items">
+          <a class="projects__item projects-1" href="./projects/solivar.html">
+            <p class="projects__item-title">S’Olivar</p>
+            <p class="projects__item-subtitle">Palma, Port de Soller</p>
+            <img class="projects__item-img" src="./images/icons/sold.svg" alt="">
+          </a>
+          <a class="projects__item projects-2" href="./projects/boho-corner.html">
+            <p class="projects__item-title">Boho Corner</p>
+            <p class="projects__item-subtitle">Palma, El Terreno</p>
+            <img class="projects__item-img" src="./images/icons/sold.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="inprogress section__padding">
+      <div class="container">
+        <p class="inprogress__pretitle pretitle" data-key="inprogress-pretitle">Projects in progress</p>
+        <h3 class="inprogress__title section__title" data-key="inprogress-title">Objects under construction or in the design phase</h3>
+        <p class="inprogress__text"  data-key="inprogress-text">Showcases our current projects that are in the process of being realized. Here, you can see how our ideas are transforming into modern, high-quality construction projects.</p>
+        <div class="inprogress__items">
+          <a class="inprogress__item inprogress-1" href="./projects/foners-club.html">
+            <p class="projects__item-title">Foners Club</p>
+            <p class="projects__item-subtitle">Palma, Foners</p>
+          </a>
+          <a class="inprogress__item inprogress-2" href="./projects/marina-residence.html">
+            <p class="projects__item-title">Marina Residence</p>
+            <p class="projects__item-subtitle">Palma, ⁠Les Meravelles</p>
+          </a>
+          <a class="inprogress__item inprogress-3" href="./projects/can-marques.html">
+            <p class="projects__item-title">Can Marquès</p>
+            <p class="projects__item-subtitle">Palma, Pere Garau</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="partners section__padding">
+      <div class="container">
+        <p class="partners__pretitle pretitle" data-key="partners-pretitle">Our partners</p>
+        <h3 class="partners__title section__title" data-key="partners-title">Planning, designing, developing and offering real estate solutions to help you achieve your goals</h3>
+        <div class="partners__inner">
+          <a class="partner__item" href="https://www.blanciblanc.com/" target="blank">
+            <img class="partner__img" src="./images/partners-blanc-i-blanc.png" alt="">
+          </a>
+          <a class="partner__item" href="https://rbkprime.com/" target="blank">
+            <img class="partner__img" src="./images/partners_rbk.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__company">
+            <li class="footer__company-title" data-key="footer-title">
+              Company
+            </li>
+            <li class="menu__item">
+              <a class="footer__company-link" href="./index.html"  data-key="footer-home">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="footer__company-link" href="./index.html#projects"  data-key="footer-projects">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a class="footer__company-link" href="./investments.html" data-key="footer-investments">Investments</a>
+            </li>
+            <li class="menu__item">
+              <a class="footer__company-link" href="./services.html"  data-key="footer-services">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="footer__company-link" href="./contacts.html"  data-key="footer-contacts">Contacts</a>
+            </li>
+          </ul>
+          <blockquote class="footer__blockquote">
+            <p class="footer__blockquote-text" data-key="footer-blockquote-text">“Building your future brick by brick: our mission is to turn your dreams into cozy and reliable homes, where every detail is filled with care and quality.”
+            </p>
+          </blockquote>
+          <div class="footer__contacts">
+            <h5 class="footer__contacts-title" data-key="footer-contacts-title">Stay In Touch</h5>
+            <p class="footer__contacts-text" data-key="footer-contacts-text">Please feel free to contact us via the email of phone. We would be happy to hear from you!</p>
+            <ul class="footer__nav">
+              <li class="footer__nav-logo">
+                <a class="footer__logo" href="./index.html">
+                  <img src="./images/logo.png" alt="logo">
+                </a>
+              </li>
+              <li class="footer__nav-contacts">
+                <a class="footer__nav-phone" href="tel:+34658058102">+34658058102</a>
+                <a class="footer__nav-email" href="mailto:office@tidgroup.es">office@tidgroup.es</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    
+    <script src="./js/translate.js"></script>
+    <script src="./js/main.js"></script>
+    
+    <!-- Premium Animations -->
+    <script src="./js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/******** страница услуги ********/
+
+.services__title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.services-page__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.services-page__item{
+    background-color: var(--main-white);
+    color: var(--main-black);
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: background-color var(--duration-medium) var(--ease-premium),
+                transform var(--duration-medium) var(--ease-premium),
+                box-shadow var(--duration-medium) var(--ease-premium),
+                border-color var(--duration-medium) var(--ease-premium);
+    border: 1px solid rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Золотая линия сверху, плавно появляющаяся */
+.services-page__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--main-white);
+    opacity: 0;
+    /* Линия не просто проявляется, а прочерчивается слева направо */
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: opacity var(--duration-medium) var(--ease-premium),
+                transform var(--duration-slow) var(--ease-premium);
+}
+
+/* Мягкое золотистое свечение в верхнем углу карточки */
+.services-page__item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 15% 0%,
+                rgba(212, 175, 55, 0.22) 0%,
+                rgba(212, 175, 55, 0) 60%);
+    opacity: 0;
+    transform: scale(0.9);
+    transform-origin: left top;
+    z-index: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-slow) var(--ease-premium),
+                transform var(--duration-slow) var(--ease-premium);
+}
+
+/* Контент держим над свечением */
+.services-page__item-img,
+.services-page__item-title,
+.services-page__item-text {
+    position: relative;
+    z-index: 1;
+}
+
+.services-page__item:hover {
+    background-color: var(--header-color);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: transparent;
+}
+
+.services-page__item:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.services-page__item:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.services-page__item-img {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: filter var(--duration-medium) var(--ease-premium),
+                transform var(--duration-slow) var(--ease-premium);
+}
+
+.services-page__item:hover .services-page__item-img {
+    filter: brightness(0) invert(1) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+    transform: translateY(-4px) scale(1.08);
+}
+
+.services-page__item-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    transition: color var(--duration-medium) var(--ease-premium),
+                transform var(--duration-medium) var(--ease-premium);
+    color: var(--primary-charcoal);
+}
+
+.services-page__item:hover .services-page__item-title {
+    color: var(--main-white);
+    transform: translateY(-2px);
+}
+
+.services-page__item-text {
+    line-height: 1.5;
+    text-align: left;
+    transition: color var(--duration-medium) var(--ease-premium),
+                transform var(--duration-medium) var(--ease-premium);
+    color: var(--medium-gray);
+    font-size: 16px;
+}
+
+.services-page__item:hover .services-page__item-text {
+    color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+/******* АДАПТИВ*******/
+@media(max-width: 1120px) {
+    .services-page__items {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 var(--space-md);
+    }
+}
+
+@media(max-width: 768px) {
+    .services-page__items {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 560px) {
+    .services-page__item {
+        padding: 25px;
+    }
+}
+
+/* Уважаем системную настройку "уменьшить движение": цвета меняются, движение нет */
+@media (prefers-reduced-motion: reduce) {
+    .services-page__item:hover,
+    .services-page__item:hover .services-page__item-img,
+    .services-page__item:hover .services-page__item-title,
+    .services-page__item:hover .services-page__item-text {
+        transform: none;
+    }
+
+    .services-page__item:hover::before {
+        transform: scaleX(1);
+    }
+
+    .services-page__item:hover::after {
+        transform: none;
+    }
+}

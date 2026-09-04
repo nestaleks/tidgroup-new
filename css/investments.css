@@ -1,0 +1,54 @@
+/******** страница инвестиции ********/
+
+.investments__top-subtitle{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.investments__item{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 0 40px;
+    margin-bottom: 75px;
+}
+.investments__item-title{
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+.investments__item-subtitle{
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.investments__item-text{
+    line-height: 1.4;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+.investments__item-img{
+    width: calc( ( 100% - 40px ) / 2.5 );
+    object-fit: contain;
+}
+
+/******* АДАПТИВ*******/
+@media(max-width: 1024px) {
+    .investments__item-img{
+        width: calc( ( 100% - 40px ) / 2 );
+    }
+}
+
+@media(max-width: 768px) {
+    .investments__item{
+        flex-wrap: wrap;
+    }
+    .investments__item-content{
+        max-width: 100%;
+    }
+    .investments__item-img{
+        width: 100%;
+        margin: 0 auto 30px;
+        order: -1;
+    }
+}

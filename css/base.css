@@ -1,0 +1,265 @@
+/* General styles */
+:root{
+    /* Premium Color Palette */
+    --primary-charcoal: #1a1a1a;
+    --warm-white: #fafafa;
+    --accent-gold: #d4af37;
+    --ocean-blue: #0f4c75;
+    --light-gray: #f5f5f5;
+    --medium-gray: #888888;
+    --success-green: #27ae60;
+    
+    /* Legacy support - gradually transition */
+    --main-white: var(--warm-white);
+    --main-black: var(--primary-charcoal);
+    --main-tangerine: var(--accent-gold);
+    --main-blue: var(--ocean-blue);
+    --gray-background: var(--light-gray);
+    --details-background: var(--light-gray);
+    --listings-grey: var(--medium-gray);
+    --header-color: var(--ocean-blue);
+    --header-text: var(--warm-white);
+    
+    /* Animation Variables */
+    /* --transition-* already include an easing, so use them alone:
+       transition: opacity var(--transition-medium);
+       To pair a custom easing with a duration use --duration-*:
+       transition: opacity var(--duration-medium) var(--ease-premium); */
+    --transition-fast: 0.2s ease-out;
+    --transition-medium: 0.3s ease-out;
+    --transition-slow: 0.5s ease-out;
+    --duration-fast: 0.2s;
+    --duration-medium: 0.3s;
+    --duration-slow: 0.5s;
+    --ease-premium: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    /* Spacing System */
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-2xl: 64px;
+    --space-3xl: 96px;
+    
+    /* Typography */
+    --font-size-xs: 14px;
+    --font-size-sm: 16px;
+    --font-size-base: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 28px;
+    --font-size-3xl: 36px;
+    --font-size-4xl: 48px;
+    --font-size-5xl: 72px;
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 20px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 30px rgba(0, 0, 0, 0.15);
+    --shadow-strong: 0 8px 40px rgba(0, 0, 0, 0.25);
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+          box-sizing: inherit; 
+        
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+html,
+body {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-charcoal);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-family: "Inter", "Poppins", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--warm-white);
+    overflow-x: hidden;
+}
+
+/* Compensate for fixed header */
+.main {
+    flex: 1;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+ul {
+    list-style: none;
+}
+/* Premium Typography Improvements */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    line-height: 1.2;
+    color: var(--primary-charcoal);
+    margin-bottom: var(--space-md);
+}
+
+/* Section styling */
+.section__padding {
+    padding: var(--space-3xl) 0;
+    position: relative;
+}
+
+.section__title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-xl);
+    text-align: center;
+    color: var(--primary-charcoal);
+    font-family: "Inter", sans-serif;
+}
+
+.pretitle {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-gold);
+    margin-bottom: var(--space-sm);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+/* Container improvements */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-md);
+    }
+    
+    .section__padding {
+        padding: var(--space-2xl) 0;
+    }
+}
+
+button {
+    font-family: "Inter", "Poppins", sans-serif;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.section__padding{
+    padding: 60px 0;
+}
+.pretitle{
+    color: var(--main-tangerine);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.page__title{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section__title{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 11px;
+    color: var(--main-blue);
+}
+
+#upBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+}
+
+/******* АДАПТИВ*******/
+@media(max-width: 1024px) {
+    .section__padding{
+        padding: 40px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .pretitle{
+        text-align: center;
+    }
+}
+
+@media(max-width: 560px) {
+    .section__padding{
+        padding: 30px 0;
+    }
+    .section__title{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    #upBtn {
+        display: none;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 480px) {
+    .page__title{
+        font-size: 40px;
+    }
+    .section__title{
+        text-align: center;
+    }
+}
+
+@media(max-width: 360px) {
+    .section__title{
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .page__title{
+        font-size: 35px;
+    }
+}

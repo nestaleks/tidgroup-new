@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" type="image/svg+xml">
+    <title>Services - TID group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Premium Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Legacy fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./app.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu--close"></div>
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="./index.html">
+            <img src="./images/logo.png" alt="logo">
+          </a>
+          
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="btn-line"></span>
+              <span class="btn-line"></span>
+              <span class="btn-line"></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__close">
+                <button class="menu__close-btn">
+                  <img src="./images/close.svg" alt="close_menu">
+                </button>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html" data-key="menu-home">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html#projects" data-key="menu-projects">Projects</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./investments.html" data-key="menu-investments">Investments</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./services.html" data-key="menu-services">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./contacts.html" data-key="menu-contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="language-selector" type="button" data-lang-toggle aria-label="Switch language" title="Switch language">
+            <span class="current-lang">EN</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <button onclick="topFunction()" id="upBtn" title="Up">
+        <img src="./images/upbtn.svg" alt=""></button>
+      <section class="services__name section__padding">
+        <div class="container">
+          <section class="services__top section__padding">
+            <div class="container">
+              <h2 class="page__title" data-key="services-page-title">Services</h2>
+              <h3 class="services__title section__title" data-key="services-section-title">Simple solutions to complex problems</h3>
+              <div class="services-page__items">
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/land-select.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-1">Land Selection</p>
+                  <p class="services-page__item-text" data-key="services-item-text-1">We'll find the perfect plot of land that meets your needs and preferences.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/land-purchase.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-2">Land Purchase</p>
+                  <p class="services-page__item-text" data-key="services-item-text-2">Project creation, construction, sale, rental</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/consultation.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-3">Consultation Services</p>
+                  <p class="services-page__item-text" data-key="services-item-text-3">We offer expert consultations on all real estate and investment matters.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/property-purchase.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-4">Property Purchase</p>
+                  <p class="services-page__item-text" data-key="services-item-text-4">We'll find the ideal property considering your needs and budget, ensuring a secure transaction.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/property-sales.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-5">Property Sales</p>
+                  <p class="services-page__item-text" data-key="services-item-text-5">We'll help sell your property on the most favorable terms, attracting potential buyers and providing professional support.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/property-rental.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-6">Property Rental</p>
+                  <p class="services-page__item-text" data-key="services-item-text-6">We'll find a suitable rental property based on your preferences and budget, guiding you through the entire rental process.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/property-evaluation.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-7">Property Evaluation</p>
+                  <p class="services-page__item-text" data-key="services-item-text-7">We'll conduct a thorough evaluation of your property, determining its market value and investment potential.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/legal-support.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-8">Legal Support</p>
+                  <p class="services-page__item-text" data-key="services-item-text-8">Assistance with buying, selling, leasing with a full service cycle</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/process-support.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-9">Process Support</p>
+                  <p class="services-page__item-text" data-key="services-item-text-9">We offer full support throughout all stages of the transaction, ensuring your peace of mind and confidence.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/custom-construction.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-10">Exclusive Custom Construction</p>
+                  <p class="services-page__item-text" data-key="services-item-text-10">We'll realize your dream of a custom home, providing individual design and turnkey construction.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/repair-works.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-11">Repair Works</p>
+                  <p class="services-page__item-text" data-key="services-item-text-11">We'll perform quality repairs on your property, considering your preferences and adhering to deadlines.</p>
+                </div>
+                <div class="services-page__item">
+                  <img class="services-page__item-img" src="./images/icons/financial-services.svg" alt="">
+                  <p class="services-page__item-title" data-key="services-item-title-12">Financial Services</p>
+                  <p class="services-page__item-text" data-key="services-item-text-12">We offer a wide range of financial services, including investment consulting.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__company">
+            <li class="footer__company-title" data-key="footer-title">
+              Company
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./index.html"  data-key="footer-home">Home</a>
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./index.html#projects"  data-key="footer-projects">Projects</a>
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./investments.html"  data-key="footer-investments">Investments</a>
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./services.html"  data-key="footer-services">Services</a>
+            </li>
+            <li class="footer__company-item">
+              <a class="footer__company-link" href="./contacts.html"  data-key="footer-contacts">Contacts</a>
+            </li>
+          </ul>
+          <blockquote class="footer__blockquote">
+            <p class="footer__blockquote-text"  data-key="footer-blockquote-text">“Building your future brick by brick: our mission is to turn your dreams into cozy and reliable homes, where every detail is filled with care and quality.”
+            </p>
+          </blockquote>
+          <div class="footer__contacts">
+            <h5 class="footer__contacts-title" data-key="footer-contacts-title">Stay In Touch</h5>
+            <p class="footer__contacts-text" data-key="footer-contacts-text">Please feel free to contact us via the email of phone. We would be happy to hear from you!</p>
+            <ul class="footer__nav">
+              <li class="footer__nav-logo">
+                <a class="footer__logo" href="./index.html">
+                  <img src="./images/logo.png" alt="logo">
+                </a>
+              </li>
+              <li class="footer__nav-contacts">
+                <a class="footer__nav-phone" href="tel:+34658058102">+34658058102</a>
+                <a class="footer__nav-email" href="mailto:office@tidgroup.es">office@tidgroup.es</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/translate.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

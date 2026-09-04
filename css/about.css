@@ -1,0 +1,27 @@
+/******* страница About Us *******/
+.about__text{
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+.about__text + .about__text{
+    margin-top: 15px;
+}
+.about__gallery-text{
+    max-width: 574px;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+}
+
+.gallery__link,
+.news__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/******* АДАПТИВ*******/
